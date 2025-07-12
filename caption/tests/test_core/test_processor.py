@@ -1,7 +1,7 @@
-from src.processor import ImageProcessModel
+from caption.core.processor import ImageProcessModel
 
 
-def image_test():
+def test_image_caption():
 
     model_path = "Salesforce/blip-image-captioning-base"
     model = ImageProcessModel(model_path)
@@ -9,4 +9,4 @@ def image_test():
     print(output)
 
 
-image_test()
+test_image_caption()

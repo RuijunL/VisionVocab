@@ -12,6 +12,4 @@ def generate_caption(request):
         return JsonResponse({"caption": caption})
     return JsonResponse({"error": "no image uploaded"}, status = 400)
 
-    
-    
-# Create your views here.
+
