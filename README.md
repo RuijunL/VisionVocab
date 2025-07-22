@@ -17,25 +17,20 @@
 
 ## 文件管理结构
 VisionVocab/
-├── data/                                # 数据相关
-│   ├── samples/                         # 测试图像
-│   └── annotations.json                 # 人工标注真值（图中物体类别 + 坐标）
-│
-├── model_testing/                       # 模型测试代码
-│   ├── run_combo.py                     # 跑模型组合（caption + detector）
-│   ├── metrics.py                       # 评估指标 M1~M6 实现
-│   └── combos.yaml                      # 模型组合配置文件
-│
-├── results/                             # 实验输出结果
-│   ├── raw_outputs/                     # 模型原始输出（json）
-│   ├── visualizations/                  # 可视化结果（检测框 + caption 图像）
-│   └── summary_metrics.csv              # 所有组合的评估指标汇总
-│
-├── work_log.md                          # 项目开发过程日志
-
+├── data/
+│   ├── samples/                # 测试图像
+│   └── annotations.json        # 人工标注真值
+├── model_testing/
+│   ├── run_combo.py            # 跑组合：caption+detector
+│   ├── metrics.py              # metrics函数
+│   └── combos.yaml             # 组合配置（哪个caption+哪个detector）
+├── results/
+│   ├── raw_outputs/            # 原始模型输出json
+│   ├── visualizations/         # 框图叠加
+│   └── summary_metrics.csv     # 各组合指标表
+├── work_log.md                 # 项目日志
 
 ---
-
 ## 数据集说明
 | 数据集名称     | 来源/链接 | 用途说明 |
 |----------------|-----------|----------|
